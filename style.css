@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: linear-gradient(to right, #ccc, #333); /* Light grey to dark grey */;
+    background: linear-gradient(to right, #ccc, #333); /* Light grey to dark grey */
     color: white;
     padding: 10px;
     text-align: center;
@@ -32,11 +32,12 @@ nav a:hover {
 }
 
 footer {
-    background-color: linear-gradient(to right, #ccc, #333); /* Light grey to dark grey */;
+    background: linear-gradient(to right, #ccc, #333); /* Light grey to dark grey */
     color: white;
     text-align: center;
     padding: 10px;
 }
+
 
 footer a {
     color: white;
