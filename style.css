@@ -4,13 +4,13 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+
 header {
     background-color: #333; /* Dark grey */
     color: white;
     padding: 10px;
     text-align: center;
 }
-
 
 header img {
     width: 150px;
@@ -66,8 +66,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-}
-
 .home {
     text-align: center;
     padding: 50px;
@@ -82,5 +80,4 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 
