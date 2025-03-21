@@ -32,21 +32,40 @@ nav a:hover {
 }
 
 footer {
-    background-color: #333; /* Dark grey */
-    color: white;
-    padding: 10px;
-    text-align: center;
+    background-color: #f0f0f0; /* Light grey */
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+footer .left {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .right {
+    display: flex;
+    align-items: center;
+}
+
+footer .right img {
+    width: 100px; /* Adjust size of the logo */
+    height: auto;
+    margin-left: 20px;
+}
 
 footer a {
-    color: white;
+    color: black;
+    text-decoration: none;
     margin: 0 10px;
 }
 
-footer img {
-    width: 80px;
-    margin-top: 10px;
+footer a:hover {
+    text-decoration: underline;
+}
+
 }
 
 .home {
