@@ -21,6 +21,11 @@
       <a href="faq.html">FAQ</a>
     </nav>
     <a href="contact.html" class="book-now-button">Book Now</a>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
 
   <section class="about">
@@ -74,6 +79,13 @@
         header.classList.remove('small');
         header.classList.add('large');
       }
+    });
+
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const nav = document.querySelector('nav');
+
+    hamburgerMenu.addEventListener('click', () => {
+      nav.classList.toggle('open');
     });
   </script>
 </body>

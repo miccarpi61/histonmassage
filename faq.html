@@ -53,6 +53,11 @@
       <a href="faq.html">FAQ</a>
     </nav>
     <a href="contact.html" class="book-now-button">Book Now</a>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
 
   <section class="faq-section">
@@ -156,11 +161,11 @@
       }
     });
 
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const answer = button.nextElementSibling;
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-      });
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const nav = document.querySelector('nav');
+
+    hamburgerMenu.addEventListener('click', () => {
+      nav.classList.toggle('open');
     });
   </script>
 </body>
