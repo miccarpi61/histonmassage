@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ - Histon Massage</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .faq-section {
+      padding: 50px;
+      text-align: left;
+      margin-top: 100px; /* Add margin to avoid content being hidden behind fixed header */
+    }
+
+    .faq-question {
+      background-color: #3D6F68;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+      margin-bottom: 5px;
+    }
+
+    .faq-question:hover {
+      background-color: #2f4f4f;
+    }
+
+    .faq-answer {
+      padding: 15px;
+      display: none;
+      background-color: #f4f4f4;
+      border-left: 5px solid #3D6F68;
+    }
+  </style>
 </head>
 <body>
   <header class="large">
@@ -23,11 +55,73 @@
     <a href="contact.html" class="book-now-button">Book Now</a>
   </header>
 
-  <section class="faq">
+  <section class="faq-section">
     <h1>Frequently Asked Questions</h1>
-    <p>
-      Here you will find answers to the most common questions about our services.
-    </p>
+
+    <button class="faq-question">What are the benefits of massage therapy?</button>
+    <div class="faq-answer">
+      <p>Massage therapy helps reduce stress, alleviate pain and muscle tension, improve circulation, boost immunity, and enhance overall well-being. Regular sessions can improve physical health, mental clarity, and emotional balance.</p>
+    </div>
+
+    <button class="faq-question">What type of massage do you offer?</button>
+    <div class="faq-answer">
+      <p>We offer various massage therapies including Swedish, deep tissue, sports massage, prenatal massage, aromatherapy massage, hot stone massage, and therapeutic massage tailored to your specific needs.</p>
+    </div>
+
+    <button class="faq-question">What is Reiki?</button>
+    <div class="faq-answer">
+      <p>Reiki is a gentle, non-invasive healing technique that promotes relaxation, reduces stress, and supports emotional and physical healing by balancing energy within the body.</p>
+    </div>
+
+    <button class="faq-question">What should I wear to my appointment?</button>
+    <div class="faq-answer">
+      <p>Wear comfortable clothing. During massage sessions, you will typically undress to your comfort level and be securely covered by sheets throughout the session. Reiki treatments can be received fully clothed.</p>
+    </div>
+
+    <button class="faq-question">How long should I allow for my appointment?</button>
+    <div class="faq-answer">
+      <p>Appointments usually range from 60 to 90 minutes. Your booking confirmation will specify the exact duration of your selected service.</p>
+    </div>
+
+    <button class="faq-question">Is it ok to ask for more or less pressure?</button>
+    <div class="faq-answer">
+      <p>Absolutely! Your comfort is our priority. Always communicate your preference, and your therapist will gladly adjust pressure accordingly.</p>
+    </div>
+
+    <button class="faq-question">What should I expect during my first visit?</button>
+    <div class="faq-answer">
+      <p>Expect a welcoming and relaxing experience. You’ll start by discussing your health history and any concerns, followed by your chosen treatment. Feel free to ask questions or share preferences at any time.</p>
+    </div>
+
+    <button class="faq-question">How often should I get a massage?</button>
+    <div class="faq-answer">
+      <p>Frequency depends on your personal needs and goals. Generally, monthly massages are beneficial for maintenance, while more frequent sessions may be recommended for specific issues or therapeutic goals.</p>
+    </div>
+
+    <button class="faq-question">What if I'm self-conscious about a particular area?</button>
+    <div class="faq-answer">
+      <p>Your comfort is essential. Please inform your therapist about any areas you’d prefer to avoid or areas you're concerned about. Our therapists are highly professional and sensitive to your comfort.</p>
+    </div>
+
+    <button class="faq-question">Is Reiki safe for everyone?</button>
+    <div class="faq-answer">
+      <p>Yes, Reiki is safe and beneficial for people of all ages and health conditions, as it is gentle and non-invasive.</p>
+    </div>
+
+    <button class="faq-question">How do I book an appointment?</button>
+    <div class="faq-answer">
+      <p>You can book your appointment online through our website, or call us directly to schedule your session.</p>
+    </div>
+
+    <button class="faq-question">How do I pay for my session?</button>
+    <div class="faq-answer">
+      <p>We accept cash, major credit cards, and online payments at the time of service.</p>
+    </div>
+
+    <button class="faq-question">Do you offer gift certificates?</button>
+    <div class="faq-answer">
+      <p>Yes, we offer gift certificates—perfect for birthdays, anniversaries, or simply to show appreciation. These can be purchased online or directly at our office.</p>
+    </div>
   </section>
 
   <footer>
@@ -54,6 +148,13 @@
         header.classList.remove('small');
         header.classList.add('large');
       }
+    });
+
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
     });
   </script>
 </body>
