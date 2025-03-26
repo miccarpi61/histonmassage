@@ -10,7 +10,7 @@ header {
   color: white;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align items to the left */
   align-items: center;
   position: fixed;
   width: 100%;
@@ -27,6 +27,7 @@ header .logo {
   width: 100px; /* Initial large size of the logo */
   height: auto;
   transition: width 0.3s;
+  margin-right: 20px; /* Add space between logo and nav */
 }
 
 header.small .logo {
