@@ -12,11 +12,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.3s;
+}
+
+header.large {
+  padding: 20px;
 }
 
 header .logo {
-  width: 50px; /* Adjust size of the logo */
+  width: 100px; /* Initial large size of the logo */
   height: auto;
+  transition: width 0.3s;
+}
+
+header.small .logo {
+  width: 50px; /* Smaller size of the logo when scrolling */
 }
 
 nav {
@@ -71,6 +85,7 @@ footer a:hover {
 .home {
   text-align: center;
   padding: 50px;
+  margin-top: 100px; /* Add margin to avoid content being hidden behind fixed header */
 }
 
 .home-image {

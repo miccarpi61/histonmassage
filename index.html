@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <header class="large">
     <a href="index.html">
       <img src="images/Logo.PNG" alt="Histon Massage Logo" class="logo">
     </a>
@@ -46,6 +46,18 @@
       <img src="images/Logo.PNG" alt="Histon Massage Logo">
     </div>
   </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.remove('large');
+        header.classList.add('small');
+      } else {
+        header.classList.remove('small');
+        header.classList.add('large');
+      }
+    });
+  </script>
 </body>
 </html>
-
