@@ -23,11 +23,16 @@ header.large {
   padding: 20px;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
 header .logo {
   width: 100px; /* Initial large size of the logo */
   height: auto;
   transition: width 0.3s;
-  margin-right: 20px; /* Add space between logo and nav */
+  margin-right: 20px; /* Add space between logo and title */
 }
 
 header.small .logo {
@@ -35,8 +40,6 @@ header.small .logo {
 }
 
 .header-title {
-  flex-grow: 1;
-  text-align: center;
   font-size: 24px; /* Adjust the font size as needed */
   margin: 0;
 }
