@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #808080; /* Grey */
+  background: linear-gradient(to right, #F0F0EB, #3D6F68); /* Gradient from left to right */
   color: white;
   padding: 20px;
   display: flex;
@@ -65,8 +65,8 @@ nav a:hover {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
-  margin-left: 5px; /* Reduce space between nav and button */
-  margin-right: 60px; /* reduce space */ 
+  margin-left: 20px; /* Increase space between nav and button */
+  margin-right: 20px; /* Add space between button and right side of page */
 }
 
 .book-now-button:hover {
