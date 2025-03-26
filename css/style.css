@@ -34,10 +34,16 @@ header.small .logo {
   width: 50px; /* Smaller size of the logo when scrolling */
 }
 
+.header-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 0;
+}
+
 nav {
   display: flex;
   gap: 15px; /* Add gap between navigation links */
-  flex-grow: 1; /* Allow nav to take up remaining space */
 }
 
 nav a {
@@ -57,7 +63,7 @@ nav a:hover {
   border-radius: 5px;
   transition: background-color 0.3s;
   margin-left: 20px; /* Add space between nav and button */
-  margin-right: 30px; /* Add space between button and right edge */}
+}
 
 .book-now-button:hover {
   background-color: #555; /* Slightly lighter dark grey */
