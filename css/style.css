@@ -260,7 +260,7 @@ img {
   }
 
   .home, .faq, .contact, .about {
-    margin-top: 700px; /* Increase margin-top to avoid content being hidden behind fixed header */
+    margin-top: 500px; /* Increase margin-top to avoid content being hidden behind fixed header */
   }
 }
 
