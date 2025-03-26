@@ -75,35 +75,37 @@ nav a:hover {
   background-color: #555; /* Slightly lighter dark grey */
 }
 
-.faq-section {
-  padding: 50px;
-  text-align: left;
-  margin-top: 100px; /* Add margin to avoid content being hidden behind fixed header */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.faq-question {
+.contact label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
   background-color: #3D6F68;
   color: white;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
+  padding: 10px 20px;
   border: none;
-  text-align: left;
-  outline: none;
-  font-size: 18px;
-  transition: background-color 0.3s;
-  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.faq-question:hover {
+.contact button:hover {
   background-color: #2f4f4f;
-}
-
-.faq-answer {
-  padding: 15px;
-  display: none;
-  background-color: #f4f4f4;
-  border-left: 5px solid #3D6F68;
 }
 
 footer {
