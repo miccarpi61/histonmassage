@@ -3,81 +3,81 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
-
-header {
+  }
+  
+  header {
     background-color: #333; /* Dark grey */
     color: white;
     padding: 10px;
     text-align: center;
-}
-
-header img {
+  }
+  
+  header img {
     width: 150px;
     height: auto;
-}
-
-nav {
+  }
+  
+  nav {
     margin-top: 10px;
-}
-
-nav a {
+  }
+  
+  nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     text-decoration: underline;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #f0f0f0; /* Light grey */
     color: black;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-footer .left {
+  }
+  
+  footer .left {
     display: flex;
     flex-direction: column;
-}
-
-footer .right {
+  }
+  
+  footer .right {
     display: flex;
     align-items: center;
-}
-
-footer .right img {
+  }
+  
+  footer .right img {
     width: 100px; /* Adjust size of the logo */
     height: auto;
     margin-left: 20px;
-}
-
-footer a {
+  }
+  
+  footer a {
     color: black;
     text-decoration: none;
     margin: 0 10px;
-}
-
-footer a:hover {
+  }
+  
+  footer a:hover {
     text-decoration: underline;
-}
-
-.home {
+  }
+  
+  .home {
     text-align: center;
     padding: 50px;
-}
-
-.home-image {
+  }
+  
+  .home-image {
     width: 50%;
     margin: 20px auto;
-}
-
-img {
+  }
+  
+  img {
     max-width: 100%;
     height: auto;
-}
-
+  }
+  
