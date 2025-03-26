@@ -66,7 +66,7 @@ nav a:hover {
   border-radius: 5px;
   transition: background-color 0.3s;
   margin-left: 20px; /* Add space between nav and button */
-}
+  margin-right: 10px; /* Add space between button and side of page */}
 
 .book-now-button:hover {
   background-color: #555; /* Slightly lighter dark grey */
