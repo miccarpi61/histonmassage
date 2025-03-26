@@ -260,7 +260,7 @@ img {
   }
 
   .home, .faq, .contact, .about {
-    margin-top: 160px; /* Increase margin-top to avoid content being hidden behind fixed header */
+    margin-top: 200px; /* Increase margin-top to avoid content being hidden behind fixed header */
   }
 }
 
@@ -284,7 +284,7 @@ img {
 
   .home, .faq, .contact, .about {
     padding: 20px;
-    margin-top: 160px; /* Increase margin-top to avoid content being hidden behind fixed header */
+    margin-top: 200px; /* Increase margin-top to avoid content being hidden behind fixed header */
   }
 
   .hamburger-menu {
