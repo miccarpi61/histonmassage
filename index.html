@@ -1,67 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Histon Massage</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="large">
-    <div class="header-left">
-      <a href="index.html">
-        <img src="images/Logo.PNG" alt="Histon Massage Logo" class="logo">
-      </a>
-      <h1 class="header-title">Histon Massage and Holistic Care</h1>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-    </nav>
-    <a href="contact.html" class="book-now-button">Book Now</a>
-  </header>
+/* Common styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  <section class="home">
-    <h1>Welcome to Histon Massage and Holistic Care</h1>
-    <p>
-      Welcome to Histon Massage, where relaxation, rejuvenation, and well-being are our top priorities.
-      Whether you're here for stress relief, recovery, or general wellness, we offer personalized treatments to meet your needs.
-    </p>
+header {
+  background-color: #808080; /* Grey */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Space between logo/nav and button */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.3s;
+}
 
-    <h2>Opening Hours</h2>
-    <p><strong>Mon - Fri:</strong> 9:00 AM - 9:00 PM</p>
-    <p><strong>Sat - Sun:</strong> Closed</p>
+header.large {
+  padding: 20px;
+}
 
-    <img src="images/photo1.jpg" alt="Massage Photo" class="home-image">
-  </section>
+.header-left {
+  display: flex;
+  align-items: center;
+}
 
-  <footer>
-    <div class="left">
-      <p><strong>Opening Hours:</strong></p>
-      <p>Mon - Fri: 9:00 AM - 9:00 PM</p>
-      <p>Sat: Closed</p>
-      <p>Sun: Closed</p>
-    </div>
-    <div class="right">
-      <a href="https://www.facebook.com/people/Histon-Massage-and-Holistic-Care/61568344555885/" target="_blank">Facebook</a>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-      <img src="images/Logo.PNG" alt="Histon Massage Logo">
-    </div>
-  </footer>
+header .logo {
+  width: 100px; /* Initial large size of the logo */
+  height: auto;
+  transition: width 0.3s;
+  margin-right: 20px; /* Add space between logo and title */
+}
 
-  <script>
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      if (window.scrollY > 50) {
-        header.classList.remove('large');
-        header.classList.add('small');
-      } else {
-        header.classList.remove('small');
-        header.classList.add('large');
-      }
-    });
-  </script>
-</body>
-</html>
+header.small .logo {
+  width: 50px; /* Smaller size of the logo when scrolling */
+}
+
+.header-title {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 15px; /* Add gap between navigation links */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.book-now-button {
+  background-color: #333; /* Dark grey color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 20px; /* Add space between nav and button */
+  margin-right: 10px; /* Add space between button and side of page */
+}
+
+.book-now-button:hover {
+  background-color: #555; /* Slightly lighter dark grey */
+}
+
+/* FAQ-specific styles */
+.faq {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #808080; /* Grey */
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .left {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .right {
+  display: flex;
+  align-items: center;
+}
+
+footer .right img {
+  width: 30px; /* Adjust size of the logo */
+  height: auto;
+  margin-left: 20px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

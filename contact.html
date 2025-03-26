@@ -1,40 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Histon Massage</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <a href="index.html">
-      <img src="images/Logo.PNG" alt="Histon Massage Logo" class="logo">
-    </a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-    </nav>
-  </header>
+/* Common styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>If you’d like to book a session, you can do so easily through the link below:</p>
-    <a href="https://www.sumupbooking.com/histon-massage-and-holistic-care" target="_blank">
-      <button>Book a Session Now</button>
-    </a>
-    <p>For any other enquiries, feel free to reach out via email or phone, and I’ll get back to you as soon as possible!</p>
-    <p>Email: Jan@histonmassage.co.uk</p>
-    <p>Phone: +44 7821 174318</p>
-  </section>
+header {
+  background-color: #808080; /* Grey */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Space between logo/nav and button */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.3s;
+}
 
-  <footer>
-    <a href="https://www.facebook.com/people/Histon-Massage-and-Holistic-Care/61568344555885/" target="_blank">Facebook</a>
-    <a href="https://instagram.com" target="_blank">Instagram</a>
-    <img src="images/Logo.PNG" alt="Histon Massage Logo">
-  </footer>
-</body>
-</html>
+header.large {
+  padding: 20px;
+}
 
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  width: 100px; /* Initial large size of the logo */
+  height: auto;
+  transition: width 0.3s;
+  margin-right: 20px; /* Add space between logo and title */
+}
+
+header.small .logo {
+  width: 50px; /* Smaller size of the logo when scrolling */
+}
+
+.header-title {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 15px; /* Add gap between navigation links */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.book-now-button {
+  background-color: #333; /* Dark grey color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 20px; /* Add space between nav and button */
+  margin-right: 10px; /* Add space between button and side of page */
+}
+
+.book-now-button:hover {
+  background-color: #555; /* Slightly lighter dark grey */
+}
+
+/* FAQ-specific styles */
+.faq {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #808080; /* Grey */
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .left {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .right {
+  display: flex;
+  align-items: center;
+}
+
+footer .right img {
+  width: 30px; /* Adjust size of the logo */
+  height: auto;
+  margin-left: 20px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
