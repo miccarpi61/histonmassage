@@ -197,3 +197,70 @@ img {
   max-width: 400px;
   border-radius: 10px;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-now-button {
+    margin: 10px 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .home-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .book-now-button {
+    padding: 8px 15px;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .home, .faq, .contact, .about {
+    padding: 20px;
+    margin-top: 80px;
+  }
+}
