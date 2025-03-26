@@ -6,22 +6,21 @@ body {
 }
 
 header {
-  background-color: #333; /* Dark grey */
+  background-color: #808080; /* Grey */
   color: white;
   padding: 10px;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header img {
-  width: 100px; /* Adjust size of the logo */
+header .logo {
+  width: 50px; /* Adjust size of the logo */
   height: auto;
 }
 
 nav {
-  margin-top: 10px;
+  display: flex;
 }
 
 nav a {
@@ -35,7 +34,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #f0f0f0; /* Light grey */
+  background-color: #808080; /* Grey */
   color: black;
   padding: 20px;
   display: flex;
@@ -54,7 +53,7 @@ footer .right {
 }
 
 footer .right img {
-  width: 50px; /* Adjust size of the logo */
+  width: 30px; /* Adjust size of the logo */
   height: auto;
   margin-left: 20px;
 }
