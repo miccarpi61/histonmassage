@@ -10,7 +10,7 @@ header {
   color: white;
   padding: 20px;
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: space-between; /* Space between logo/nav and button */
   align-items: center;
   position: fixed;
   width: 100%;
@@ -46,6 +46,19 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+.book-now-button {
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.book-now-button:hover {
+  background-color: #ff4500; /* Darker tomato color */
 }
 
 footer {
